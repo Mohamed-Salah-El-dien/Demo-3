@@ -1,0 +1,145 @@
+.navbar {
+  max-width: 133rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.7rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 99999;
+  margin: 0 auto;
+}
+.navbarImg {
+  width: 14.5rem;
+}
+.navbarImg img {
+  width: 100%;
+  height: 100%;
+}
+.navbarLinks {
+  display: flex;
+  list-style: none;
+  gap: 2.1rem;
+}
+.navbarLinks a {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #010103;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbarLinks a:hover {
+  color: #ff4d30;
+}
+@media (max-width: 1000px) {
+  .navbarLinks {
+    display: none;
+  }
+}
+.navbarButtons {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  align-items: center;
+}
+
+.navbarButtons a {
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .navbarButtons {
+    display: none;
+  }
+}
+.navbarSignin {
+  color: #010103;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbarSignin:hover {
+  color: #ff4d30;
+}
+.navbarRegister {
+  background-color: #ff4d30;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+}
+.navbarRegister:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+  background-color: #fa4226;
+}
+
+.mobileHamb {
+  font-size: 2.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.mobileHamb:hover {
+  color: #ff4d30;
+}
+@media (max-width: 1000px) {
+  .mobileHamb {
+    display: flex;
+  }
+}
+
+.mobileNavbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: #ffffff;
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.navbarClose {
+  font-size: 3rem;
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbarClose:hover {
+  color: #ff4d30;
+}
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 2.3rem;
+  gap: 3rem;
+  text-align: center;
+}
+.mobileLinks li a {
+  text-decoration: none;
+  color: #010103;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.mobileLinks li a:hover {
+  color: #ff4d30;
+}
+
+.openNav {
+  left: 0;
+}

@@ -1,0 +1,44 @@
+.bannerSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #2d2d2d;
+  margin: 8rem 0;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.bannerContent {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.bannerText h2 {
+  font-size: 5.2rem;
+  line-height: 1.3;
+}
+@media (max-width: 550px) {
+  .bannerText h2 {
+    font-size: 4.2rem;
+  }
+}
+.bannerText p {
+  font-size: 2.4rem;
+}
+@media (max-width: 550px) {
+  .bannerText p {
+    font-size: 2rem;
+  }
+}
+.bannerText span {
+  color: #ff4d30;
+  font-weight: 500;
+}
